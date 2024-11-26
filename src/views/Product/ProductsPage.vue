@@ -27,11 +27,11 @@
             <li v-for="color in product.color" :key="color" class="color-box" :style="{ backgroundColor: color.toLowerCase() }"></li>
           </ul>
 
-          <!-- Images -->
+          <!-- Images
           <p><strong>More Images:</strong></p>
           <div class="additional-images">
             <img v-for="(image, index) in product.images" :key="index" :src="image" :alt="product.name" class="additional-image" />
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -97,7 +97,7 @@ h1 {
 /* Product Image */
 .product-image {
   width: 100%;
-  height: 200px;
+  aspect-ratio: 1;
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 10px;
